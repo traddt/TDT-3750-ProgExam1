@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tradd Thomas - CPSC 3750 Program Exam 1</title>
+		<link rel="stylesheet" href="prime.css">
+		<link rel="stylesheet" href="/src/style.css">
+		<script type="text/javascript" src="prime.js"></script>
+		<script type="text/javascript" src="/src/main2.js"></script>
+	</head>
+
+	<body onload="setInterval(function(){changeColors()},5000);setup();">
+		<div id="navbar">
+		</div>
+		<!-- Dummy object to hold the navbar-->
+		<div id="spacer">
+		</div>
+		
+		<!-- Used to prevent the website from displaying anything until it is fully loaded-->
+		<div id="loadholder">
+			<div id="loader">
+			</div>
+		</div>
+		
+		<div id="class-content">
+		    
+		
+		    <label for="num">Enter a number greater than 1:</label>
+            <input type="text" id="num" name="num"><br><br>
+            <button id="btn" onclick="printList();">Enter</button>
+		
+            <br><br>
+		    <div id="lists">
+		        <div class="list">
+                    <ul class="listBox" id="primes">
+                        <li>Primes</li>
+                    </ul>
+                    <button class="sLists" onclick="sumPrimes();">Sum of List</button>
+                    <p id="pSum"></p>
+                </div>
+                <div class="list">
+                    <ul class="listBox" id="nonprimes">
+                        <li>Non-Primes</li>
+                    </ul>
+                    <button class="sLists" onclick="sumNonPrimes();">Sum of List</button>
+                    <p id="npSum"></p>
+                </div>
+    		</div>
+    	</div>
+	</body>
+</html>
